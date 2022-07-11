@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// import { sparqlEndpoint } from "./sparql";
+import "./App.css";
+import {
+  q as p127,
+  formatAncestorsLabel,
+} from "sherlock-sparql-queries/src/queries/p127";
+
+console.log(p127);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div>Coucou</div>;
 }
 
 export default App;
+
+/*
+const test_query = q(
+  `http://data-iremus.huma-num.fr/id/d4b92b44-3305-44c7-87a9-a56bfd5539ec`
+);
+
+// console.log(test_query);
+// console.log(format_ancestors_label());
+
+(async () => console.log(await sparqlEndpoint(test_query)))();
+
+*/
