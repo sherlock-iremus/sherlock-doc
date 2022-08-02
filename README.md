@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+## Target local repository for sherlock-sparql-queries
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`cd <path/of/sherlock-sparql-queries/folder>`
+`yarn link`
+`cd <path/of/sherlock-doc/folder>`
+`yarn link sherlock-sparql-queries`
+
+Now, every time you edit and save (not commit) a file of sherlock-sparql-queries, changes will be reflected
 
 ## Available Scripts
 
