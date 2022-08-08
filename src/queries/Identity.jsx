@@ -1,5 +1,13 @@
-import { identity, example } from "sherlock-sparql-queries/src/queries/identity";
+import { identity } from "sherlock-sparql-queries/src/queries/identity";
 import Query from "../Query";
+
+const example = [
+  ["resource", "http://data-iremus.huma-num.fr/id/18654b25-a05d-415e-b809-e334827edea8"],
+  ["getLinkedResourcesIdentity", true],
+  ["countLinkedResources", true],
+  ["linkingPredicate", undefined],
+  ["linkedResourcesDirection", "OUTGOING"]
+]
 
 function Identity() {
   return <Query f={identity} example={example} />
