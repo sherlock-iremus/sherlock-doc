@@ -7,6 +7,7 @@
 
 Now, every time you edit and save (not commit) a file of sherlock-sparql-queries, changes will be reflected
 
+With Yarn v2: [https://github.com/yarnpkg/berry/pull/98]().
 ## Available Scripts
 
 In the project directory, you can run:
