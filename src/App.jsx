@@ -6,10 +6,13 @@ function App() {
     <nav>
       <ul>
         <li>
-          <Link to="/identity">identity</Link>
+          <Link to="/identity">Identity</Link>
         </li>
         <li>
-          <Link to="/p127">p127</Link>
+          <Link to="/p127">P127</Link>
+        </li>
+        <li>
+          <Link to="/mg-livraisons">Livraisons du Mercure Galant</Link>
         </li>
       </ul>
     </nav>

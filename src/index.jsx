@@ -7,9 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+import theme from "./theme";
+
 import Identity from "./queries/Identity";
 import P127 from "./queries/P127";
-import theme from "./theme";
+import MG_Livraisons from "./queries/MG_Livraisons";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,6 +24,7 @@ root.render(
           <Route path="/" element={<App />} />
           <Route path="identity" element={<Identity />} />
           <Route path="p127" element={<P127 />} />
+          <Route path="mg-livraisons" element={<MG_Livraisons />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
