@@ -13,6 +13,7 @@ import theme from "./theme";
 import Identity from "./queries/Identity";
 import P127 from "./queries/P127";
 import MG_Livraisons from "./queries/MG_Livraisons";
+import Selections from "./queries/Selections";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +25,7 @@ root.render(
           <Route path="/" element={<App />} />
           <Route path="identity" element={<Identity />} />
           <Route path="p127" element={<P127 />} />
+          <Route path="selections" element={<Selections />} />
           <Route path="mg-livraisons" element={<MG_Livraisons />} />
         </Routes>
       </BrowserRouter>

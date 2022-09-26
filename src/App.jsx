@@ -14,6 +14,9 @@ function App() {
         <li>
           <Link to="/mg-livraisons">Livraisons du Mercure Galant</Link>
         </li>
+        <li>
+          <Link to="/selections">Selections</Link>
+        </li>
       </ul>
     </nav>
   );
