@@ -14,6 +14,10 @@ import Identity from "./queries/Identity";
 import P127 from "./queries/P127";
 import MG_Livraisons from "./queries/MG_Livraisons";
 import Selections from "./queries/Selections";
+import Scores from "./queries/Scores";
+import Contributors from "./queries/Contributors";
+import Contributions from "./queries/Contributions";
+import NoteOccurences from "./queries/NoteOccurences";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -26,6 +30,10 @@ root.render(
           <Route path="identity" element={<Identity />} />
           <Route path="p127" element={<P127 />} />
           <Route path="selections" element={<Selections />} />
+          <Route path="scores" element={<Scores />} />
+          <Route path="contributors" element={<Contributors />} />
+          <Route path="contributions" element={<Contributions />} />
+          <Route path="note-occurences" element={<NoteOccurences />} />
           <Route path="mg-livraisons" element={<MG_Livraisons />} />
         </Routes>
       </BrowserRouter>

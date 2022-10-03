@@ -3,7 +3,7 @@ import { selections } from "sherlock-sparql-queries/src/queries/selections";
 import Query from "../Query";
 
 export const example = [
-  ["resource", "http://data-iremus.huma-num.fr/id/eff6f0a7-cf80-402c-953b-c66161051356"],
+  ["resource", "http://data-iremus.huma-num.fr/id/f158e5f5-8d1f-43d0-8e85-1892824798e1"],
 ]
 
 function Selections() {

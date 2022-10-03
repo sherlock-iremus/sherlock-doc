@@ -17,6 +17,18 @@ function App() {
         <li>
           <Link to="/selections">Selections</Link>
         </li>
+        <li>
+          <Link to="/scores">Scores</Link>
+        </li>
+        <li>
+          <Link to="/contributors">Contributors</Link>
+        </li>
+        <li>
+          <Link to="/contributions">Contributions</Link>
+        </li>
+        <li>
+          <Link to="/note-occurences">Note Occurences</Link>
+        </li>
       </ul>
     </nav>
   );
