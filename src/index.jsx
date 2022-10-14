@@ -18,6 +18,7 @@ import Scores from "./queries/Scores";
 import Contributors from "./queries/Contributors";
 import Contributions from "./queries/Contributions";
 import NoteOccurences from "./queries/NoteOccurences";
+import Fondamentales from "./queries/Fondamentales";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -34,6 +35,7 @@ root.render(
           <Route path="contributors" element={<Contributors />} />
           <Route path="contributions" element={<Contributions />} />
           <Route path="note-occurences" element={<NoteOccurences />} />
+          <Route path="fondamentales" element={<Fondamentales />} />
           <Route path="mg-livraisons" element={<MG_Livraisons />} />
         </Routes>
       </BrowserRouter>

@@ -29,6 +29,9 @@ function App() {
         <li>
           <Link to="/note-occurences">Note Occurences</Link>
         </li>
+        <li>
+          <Link to="/fondamentales">Fondamentales</Link>
+        </li>
       </ul>
     </nav>
   );
