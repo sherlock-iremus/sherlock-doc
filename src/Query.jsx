@@ -1,4 +1,4 @@
-import { Paper, Stack, Typography } from "@mui/material";
+import { Paper, Stack, Tab, Tabs, Typography } from "@mui/material";
 import { useState, useEffect } from "react";
 
 import { sparqlEndpoint } from "sherlock-sparql-queries/src/common/sparql";
@@ -10,6 +10,7 @@ function Query({ f, example }) {
   const [res, setRes] = useState([]);
   const [args, setArgs] = useState(example || []);
   const [loading, setLoading] = useState(false);
+  const [tab, setTab] = useState('result')
   const query = f.apply(
     null,
     args.map((arg) => arg[1])
@@ -31,12 +32,19 @@ function Query({ f, example }) {
       {(
         <Paper sx={{ p: 1 }}>
           <Typography>
-            {`${res?.results?.bindings?.length} bindings.`} <QueryPopover query={query}/>
+            {`${res?.results?.bindings?.length} bindings.`} 
           </Typography>
         </Paper>
       )}
-
-      {buildTable(res)}
+      <Tabs
+        value={tab}
+        onChange={(e, v) => setTab(v)}
+        variant="fullWidth"
+      >
+        <Tab value="result" label="Result" />
+        <Tab value="query" label="SPARQL Query" />
+      </Tabs>
+      {tab === 'result' ? buildTable(res) : <QueryPopover query={query}/> }
     </Stack>
     
   );
