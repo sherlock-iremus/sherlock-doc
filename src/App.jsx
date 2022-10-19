@@ -32,6 +32,9 @@ function App() {
         <li>
           <Link to="/fondamentales">Fondamentales</Link>
         </li>
+        <li>
+          <Link to="/historical-models-ontologies">Historical models ontologies</Link>
+        </li>
       </ul>
     </nav>
   );
