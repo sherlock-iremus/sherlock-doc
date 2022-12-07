@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sherlock-doc/static/css/main.9542d0d4.css",
+    "main.js": "/sherlock-doc/static/js/main.2daa5732.js",
+    "static/js/787.b97e8a52.chunk.js": "/sherlock-doc/static/js/787.b97e8a52.chunk.js",
+    "index.html": "/sherlock-doc/index.html",
+    "main.9542d0d4.css.map": "/sherlock-doc/static/css/main.9542d0d4.css.map",
+    "main.2daa5732.js.map": "/sherlock-doc/static/js/main.2daa5732.js.map",
+    "787.b97e8a52.chunk.js.map": "/sherlock-doc/static/js/787.b97e8a52.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9542d0d4.css",
+    "static/js/main.2daa5732.js"
+  ]
+}

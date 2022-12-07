@@ -1493,7 +1493,7 @@
     "lz-string" "^1.4.4"
     "pretty-format" "^27.0.2"
 
-"@testing-library/jest-dom@^5.16.5":
+"@testing-library/jest-dom@^5.16.4", "@testing-library/jest-dom@^5.16.5":
   "version" "5.16.5"
   dependencies:
     "@adobe/css-tools" "^4.0.1"
@@ -1512,6 +1512,13 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.5.0"
     "@types/react-dom" "^18.0.0"
+
+"@testing-library/user-event@^13.5.0":
+  "integrity" "sha512-5Kwtbo3Y/NowpkbRuSepbyMFkZmHgD+vPzYB/RJ4oxt5Gj/avFFBYjhw27cqSVPVw/3a67NK1PbiIr9k4Gwmdg=="
+  "resolved" "https://registry.npmjs.org/@testing-library/user-event/-/user-event-13.5.0.tgz"
+  "version" "13.5.0"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
 
 "@testing-library/user-event@^14.4.3":
   "integrity" "sha512-kCUc5MEwaEMakkO5x7aoD+DLi02ehmEM2QCGWvNqAS1dV/fAvORWEjnjsEIvml59M7Y5kCkWN6fCCyPOe8OL6Q=="
@@ -5589,7 +5596,7 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.6.0", "react-dom@>=16.8":
+"react-dom@^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.1.0", "react-dom@^18.2.0", "react-dom@>=16.6.0", "react-dom@>=16.8":
   "version" "18.2.0"
   dependencies:
     "loose-envify" "^1.1.0"
@@ -5685,7 +5692,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0":
+"react@^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.1.0", "react@^18.2.0", "react@>= 16", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0":
   "version" "18.2.0"
   dependencies:
     "loose-envify" "^1.1.0"
@@ -6032,8 +6039,8 @@
 "shell-quote@^1.7.3":
   "version" "1.7.3"
 
-"sherlock-sparql-queries@file:../sherlock-sparql-queries":
-  "resolved" "file:../sherlock-sparql-queries"
+"sherlock-sparql-queries@https://github.com/sherlock-iremus/sherlock-sparql-queries#main":
+  "resolved" "git+ssh://git@github.com/sherlock-iremus/sherlock-sparql-queries.git#050a1e893bc1a7bf0b7760f95dc6db3e251c6d57"
   "version" "0.1.0"
   dependencies:
     "@testing-library/jest-dom" "^5.16.4"
