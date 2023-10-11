@@ -20,6 +20,8 @@ import Contributions from "./queries/Contributions";
 import NoteOccurences from "./queries/NoteOccurences";
 import Fondamentales from "./queries/Fondamentales";
 import HistoricalModelsOntologies from "./queries/HistoricalModelsOntologies";
+import DocumentsByIndex from "./queries/DocumentsByIndex";
+import ElasticSearch from "./queries/ElasticSearch";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -38,7 +40,9 @@ root.render(
           <Route path="note-occurences" element={<NoteOccurences />} />
           <Route path="fondamentales" element={<Fondamentales />} />
           <Route path="historical-models-ontologies" element={<HistoricalModelsOntologies />} />
+          <Route path="documents-by-index" element={<DocumentsByIndex />} />
           <Route path="mg-livraisons" element={<MG_Livraisons />} />
+          <Route path="elastic-search" element={<ElasticSearch />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

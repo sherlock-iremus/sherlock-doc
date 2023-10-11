@@ -21,7 +21,7 @@ function makeDataCells(vars, bindings) {
           }
         </TableCell>
       );
-    else cells.push(<TableCell>{bindings[v]?.value || "–"}</TableCell>);
+    else cells.push(<TableCell style={{whiteSpace: "pre-line"}}>{bindings[v]?.value || "–"}</TableCell>);
   }
   return cells;
 }

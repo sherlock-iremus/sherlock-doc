@@ -35,6 +35,12 @@ function App() {
         <li>
           <Link to="/historical-models-ontologies">Historical models ontologies</Link>
         </li>
+        <li>
+          <Link to="/documents-by-index">Documents by index</Link>
+        </li>
+        <li>
+          <Link to="/elastic-search">Elastic Search</Link>
+        </li>
       </ul>
     </nav>
   );
