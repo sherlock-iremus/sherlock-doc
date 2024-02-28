@@ -1,4 +1,4 @@
-import { documentsByIndex } from "sherlock-sparql-queries/src/queries/documentsByIndex";
+import { documentsByIndex } from "sherlock-sparql-queries";
 
 import Query from "../Query";
 

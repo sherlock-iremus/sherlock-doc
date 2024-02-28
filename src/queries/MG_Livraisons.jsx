@@ -1,4 +1,4 @@
-import { mg_livraisons } from "sherlock-sparql-queries/src/queries/mg_livraisons";
+import { mg_livraisons } from "sherlock-sparql-queries";
 import Query from "../Query";
 
 function MG_Livraisons() {

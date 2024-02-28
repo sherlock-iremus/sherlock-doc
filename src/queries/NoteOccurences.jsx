@@ -1,4 +1,4 @@
-import { noteOccurences } from "sherlock-sparql-queries/src/queries/noteOccurences";
+import { noteOccurences } from "sherlock-sparql-queries";
 
 import Query from "../Query";
 

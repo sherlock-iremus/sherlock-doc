@@ -1,7 +1,7 @@
 import { Paper, Stack, Tab, Tabs, Typography } from "@mui/material";
 import { useState, useEffect } from "react";
 
-import { sparqlEndpoint } from "sherlock-sparql-queries/src/common/sparql";
+import { sparqlEndpoint } from "sherlock-rdf"
 import { buildTable } from "./muiCommon";
 import QueryParamPicker from "./QueryParamPicker";
 import QueryPopover from "./QueryPopover";

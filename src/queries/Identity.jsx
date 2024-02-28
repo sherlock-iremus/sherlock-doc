@@ -1,4 +1,4 @@
-import { identity } from "sherlock-sparql-queries/src/queries/identity";
+import { identity } from "sherlock-sparql-queries";
 import Query from "../Query";
 
 const example = [

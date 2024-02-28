@@ -1,4 +1,4 @@
-import { historicalModelsOntologies } from "sherlock-sparql-queries/src/queries/historicalModelsOntologies";
+import { historicalModelsOntologies } from "sherlock-sparql-queries";
 
 import Query from "../Query";
 

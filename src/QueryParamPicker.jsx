@@ -7,7 +7,7 @@ function QueryParamPicker({ args, setArgs, loading }) {
 
   const onChange = (event) => {
     tempArgs.find((param) => param[0] === event.target.name)[1] =
-      event.target.value;
+      event.target.value === 'false' ? false : event.target.value;
     setTempArgs(tempArgs);
   };
 

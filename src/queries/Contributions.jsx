@@ -1,4 +1,4 @@
-import { contributions } from "sherlock-sparql-queries/src/queries/contributions";
+import { contributions } from "sherlock-sparql-queries";
 
 import Query from "../Query";
 

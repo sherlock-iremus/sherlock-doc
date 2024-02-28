@@ -1,4 +1,4 @@
-import { fondamentales } from "sherlock-sparql-queries/src/queries/fondamentales";
+import { fondamentales } from "sherlock-sparql-queries";
 
 import Query from "../Query";
 

@@ -1,4 +1,4 @@
-import { p127 } from "sherlock-sparql-queries/src/queries/p127";
+import { p127 } from "sherlock-sparql-queries";
 import Query from "../Query";
 
 export const example = [
