@@ -16,8 +16,9 @@
     "react-json-pretty": "^2.2.0",
     "react-router-dom": "6",
     "react-scripts": "5.0.1",
-    "sherlock-sparql-queries": "https://github.com/sherlock-iremus/sherlock-sparql-queries",
     "sherlock-rdf": "https://github.com/sherlock-iremus/sherlock-rdf",
+    "sherlock-sparql-queries": "https://github.com/sherlock-iremus/sherlock-sparql-queries",
+    "tei-html-renderer": "^0.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

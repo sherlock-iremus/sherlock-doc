@@ -33,6 +33,9 @@ function App() {
           <Link to="/fondamentales">Fondamentales</Link>
         </li>
         <li>
+          <Link to="/tonalities-contributions">Contributions Tonalities</Link>
+        </li>
+        <li>
           <Link to="/historical-models-ontologies">Historical models ontologies</Link>
         </li>
         <li>
@@ -40,6 +43,9 @@ function App() {
         </li>
         <li>
           <Link to="/elastic-search">Elastic Search</Link>
+        </li>
+        <li>
+          <Link to="/tei-renderer">Édition TEI</Link>
         </li>
       </ul>
     </nav>

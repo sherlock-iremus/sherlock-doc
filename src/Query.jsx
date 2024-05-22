@@ -1,7 +1,7 @@
 import { Paper, Stack, Tab, Tabs, Typography } from "@mui/material";
 import { useState, useEffect } from "react";
 
-import { sparqlEndpoint } from "sherlock-rdf"
+import { querySparqlEndpoint } from "sherlock-rdf"
 import { buildTable } from "./muiCommon";
 import QueryParamPicker from "./QueryParamPicker";
 import QueryPopover from "./QueryPopover";
@@ -19,7 +19,7 @@ function Query({ f, example }) {
   useEffect(() => {
     (async () => {
       setLoading(true);
-      const res = await sparqlEndpoint(query);
+      const res = await querySparqlEndpoint(query);
       setRes(res);
       setLoading(false);
     })();
