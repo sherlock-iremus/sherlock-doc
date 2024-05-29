@@ -2,7 +2,7 @@ import { TEIHTMLRenderer } from "tei-html-renderer";
 import QueryParamPicker from "../QueryParamPicker";
 import { useState } from "react";
 
-export const example = [["URL du document TEI", 'MG-1672-01_165.json']];
+export const example = [["URL du document TEI", 'https://data-iremus.huma-num.fr/files/mercure-galant/articles/1678-09_162.xml']];
 
 function TEIRenderer() {
   const [args, setArgs] = useState(example);

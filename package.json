@@ -18,7 +18,7 @@
     "react-scripts": "5.0.1",
     "sherlock-rdf": "https://github.com/sherlock-iremus/sherlock-rdf",
     "sherlock-sparql-queries": "https://github.com/sherlock-iremus/sherlock-sparql-queries",
-    "tei-html-renderer": "^0.0.2",
+    "tei-html-renderer": "^0.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
