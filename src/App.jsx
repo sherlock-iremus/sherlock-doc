@@ -42,7 +42,10 @@ function App() {
           <Link to="/documents-by-index">Documents by index</Link>
         </li>
         <li>
-          <Link to="/elastic-search">Elastic Search</Link>
+          <Link to="/elastic-search">Moteur de recherche dans les sources (elastic-search)</Link>
+        </li>
+        <li>
+          <Link to="/sherlock-search-engine">Moteur de recherche dans les données (lucene)</Link>
         </li>
         <li>
           <Link to="/tei-renderer">Édition TEI</Link>

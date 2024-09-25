@@ -23,6 +23,7 @@ import Fondamentales from "./queries/Fondamentales";
 import HistoricalModelsOntologies from "./queries/HistoricalModelsOntologies";
 import DocumentsByIndex from "./queries/DocumentsByIndex";
 import ElasticSearch from "./queries/ElasticSearch";
+import SherlockSearchEngine from "./queries/SherlockSearchEngine";
 import TEIRenderer from "./queries/TEIRenderer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -46,6 +47,7 @@ root.render(
           <Route path="documents-by-index" element={<DocumentsByIndex />} />
           <Route path="mg-livraisons" element={<MG_Livraisons />} />
           <Route path="elastic-search" element={<ElasticSearch />} />
+          <Route path="sherlock-search-engine" element={<SherlockSearchEngine />} />
           <Route path="tei-renderer" element={<TEIRenderer />} />
         </Routes>
       </BrowserRouter>
