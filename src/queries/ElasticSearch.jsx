@@ -6,18 +6,26 @@ import { simpleQuery } from "../elastic_search_api_helper";
 function ElasticSearch() {
   const [searchResults, setSearchResults] = useState({});
   const [queryString, setQueryString] = useState({});
+  const [queryIndex, setQueryIndex] = useState("text-index");
   const onChange = (e) => {
     const queryString = e.target.value;
     if (queryString.length > 2) {
       setQueryString(queryString);
-      simpleQuery(queryString).then((result) => setSearchResults(result));
+      simpleQuery(queryIndex, queryString).then((result) => setSearchResults(result));
     }
+  };
+
+  const onChangeIndex = (e) => {
+      setQueryIndex(e.target.value);
   };
 
   console.log(searchResults);
 
   return (
     <>
+      <Stack spacing={2} m={5}>
+        <TextField value={queryIndex} label="Identifiant de l'index (resources ou text-index)" onChange={onChangeIndex} />
+      </Stack>
       <Stack spacing={2} m={5}>
         <TextField label="Recherchez n'importe quoi 🔎" onChange={onChange} />
       </Stack>
@@ -28,20 +36,8 @@ function ElasticSearch() {
             <>
               {hit._id}
               <br />
-              {hit._source.identity.map((identity) => (
-                <>
-                  {identity.p?.value ===
-                  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-                    ? identity.r.value
-                    : ""}
-                </>
-              ))}
-              <br />
-              {hit._source.identity.map((identity) => (
-                <>
-                  {identity.label?.value.toUpperCase().includes(queryString.toUpperCase()) ? identity.label?.value : ""}
-                </>
-              ))}
+              <pre>{JSON.stringify(hit, null, 2)}</pre>
+
               <br />
               <br />
             </>

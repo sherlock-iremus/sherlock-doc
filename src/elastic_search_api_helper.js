@@ -1,6 +1,6 @@
-export const simpleQuery = async (query) => {
+export const simpleQuery = async (index, query) => {
   return fetch(
-    "https://data-iremus.huma-num.fr/sherlock/es/resources/_search",
+    `https://data-iremus.huma-num.fr/sherlock/es/${index}/_search`,
     {
       method: "POST",
       headers: {
@@ -10,7 +10,7 @@ export const simpleQuery = async (query) => {
       },
       body: JSON.stringify({
         size: 10,
-        query: { simple_query_string: { query: query + "*" } },
+        query: { simple_query_string: { query: query + "~" } },
       }),
     }
   )
